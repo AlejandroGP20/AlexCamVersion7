@@ -8,11 +8,7 @@
       "img": "kits/kit-basico.jpg",
       "icon": "📦",
       "badge": "RECOMENDADO",
-      "resoluciones": [
-        "2MP",
-        "4MP",
-        "5MP"
-      ],
+      "resoluciones": ["2MP", "4MP", "5MP"],
       "active": true
     },
     {
@@ -23,11 +19,7 @@
       "img": "kits/kit-4cam.jpg",
       "icon": "📦",
       "badge": "MÁS VENDIDO",
-      "resoluciones": [
-        "2MP",
-        "4MP",
-        "5MP"
-      ],
+      "resoluciones": ["2MP", "4MP", "5MP"],
       "active": true
     },
     {
@@ -38,11 +30,7 @@
       "img": "kits/kit-8cam.jpg",
       "icon": "📦",
       "badge": "POPULAR",
-      "resoluciones": [
-        "2MP",
-        "4MP",
-        "5MP"
-      ],
+      "resoluciones": ["2MP", "4MP", "5MP"],
       "active": true
     },
     {
@@ -53,11 +41,7 @@
       "img": "kits/kit-16cam.jpg",
       "icon": "🏢",
       "badge": "EMPRESARIAL",
-      "resoluciones": [
-        "2MP",
-        "4MP",
-        "5MP"
-      ],
+      "resoluciones": ["2MP", "4MP", "5MP"],
       "active": true
     },
     {
@@ -68,11 +52,7 @@
       "img": "kits/kit-32cam.jpg",
       "icon": "🏭",
       "badge": "INDUSTRIAL",
-      "resoluciones": [
-        "2MP",
-        "4MP",
-        "5MP"
-      ],
+      "resoluciones": ["2MP", "4MP", "5MP"],
       "active": true
     },
     {
@@ -126,50 +106,162 @@
       "active": true
     },
     {
+      "id": 11,
+      "name": "Cámara pin hole 2MP",
+      "category": "camara",
+      "desc": "CÁMARA PIN HOLE 2MP ANALÓGICA CON AUDIO",
+      "img": "camaras/pinhole.jpeg",
+      "icon": "🔴",
+      "badge": "Especial",
+      "active": true
+    },
+    {
+      "id": 12,
+      "name": "Cámara Wifi Inalambrica EZVIZ 2mp",
+      "category": "camara",
+      "desc": "Camara wifi inalámbrica EZVIZ 2mp. 360º interior, comunicacion bidireccional",
+      "img": "camaras/ezviz2mp.jpg",
+      "icon": "🔴",
+      "badge": "EZVIZ",
+      "active": true
+    },
+    {
       "id": 13,
+      "name": "Cámara Wifi Inalambrica EZVIZ 4k",
+      "category": "camara",
+      "desc": "Camara wifi inalámbrica EZVIZ 4k. 360º interior, comunicacion bidireccional",
+      "img": "camaras/ezviz4k.jpg",
+      "icon": "🔴",
+      "badge": "EZVIZ 4K",
+      "active": true
+    },
+    {
+      "id": 14,
+      "name": "Cámara Wifi Inalambrica IMOU CUISER 4MP",
+      "category": "camara",
+      "desc": "Camara wifi inalámbrica IMOU CUISER tipo PTZ para exteriores Full Color 3MP. 4MP. 5MP. Comunicación bidireccional y alarma detección de humanos y rastreo inteligente.",
+      "img": "camaras/imoucruiser.png",
+      "icon": "🔴",
+      "badge": "IMOU",
+      "active": true
+    },
+    {
+      "id": 15,
+      "name": "Cámara Dahua ip bala 6MP",
+      "category": "camara",
+      "desc": "CAMARA DAHUA IP BALA 6MP WIZCOLOR WIZSENSE METALICA",
+      "img": "camaras/wizcolor.png",
+      "icon": "🔴",
+      "badge": "Dahua",
+      "active": true
+    },
+    {
+      "id": 16,
+      "name": "Cámara dahua domo metalica cvi de 2MP",
+      "category": "camara",
+      "desc": "CAMARA DAHUA DOMO METALICA CVI DE 2MP (1080P) IR 30MT IP67",
+      "img": "camaras/dahuadomometalicacvi.png",
+      "icon": "🔴",
+      "active": true
+    },
+    {
+      "id": 17,
+      "name": "Cámara dahua domo plastica cvi de 2MP",
+      "category": "camara",
+      "desc": "CAMARA DAHUA DOMO PLASTICA CVI DE 2MP (1080P) IR 25M C/AUDIO",
+      "img": "camaras/dahuadomomic.jpg",
+      "icon": "🔴",
+      "active": true
+    },
+    {
+      "id": 18,
+      "name": "Cámara dahua bala metal+plastico cvi 2MP",
+      "category": "camara",
+      "desc": "CAMARA DAHUA BALA METAL+PLÁSTICO CVI 2MP FULL COLOR IP67",
+      "img": "camaras/dahuametal+plastico.jpg",
+      "icon": "🔴",
+      "active": true
+    },
+    {
+      "id": 19,
+      "name": "Cámara dahua domo de 2MP",
+      "category": "camara",
+      "desc": "CÁMARA DAHUA DOMO DE 2 MP 1080P, HDCVI X PLUS, AUDIO BIDIRECCIONAL, ILUMINADOR DUAL INTELIGENTE, 2.8MM APERTURA DE HASTA 111°, ILUMINACIÓN DE HASTA 40M, FABRICADA EN METAL + PLASTICO",
+      "img": "camaras/dahuadomo2mp.png",
+      "icon": "🔴",
+      "active": true
+    },
+    {
+      "id": 20,
+      "name": "Cámara hikvision bala 2 MP",
+      "category": "camara",
+      "desc": "CAMARA HIKVISION BALA 2 MP, IP67, F1.0, COLORVU, LUZ HIBRIDA INTELIGENTE 40M, IR 40M, MIC INCORPORADO",
+      "img": "camaras/hikvisionbalacolorvu.png",
+      "icon": "🔴",
+      "active": true
+    },
+    {
+      "id": 21,
+      "name": "Cámara hikvision tetrahibri",
+      "category": "camara",
+      "desc": "CAMARA HIKVISION TETRAHIBRIDA BALA 3K(~5MP), 2.8MM, IP67, METALICA, LUZ20M, COLORVU, C/AUDIO",
+      "img": "camaras/hikvisiontetrahibridabala3k.png",
+      "icon": "🔴",
+      "active": true
+    },
+    {
+      "id": 22,
+      "name": "Cámara hikvision torreta 2MP",
+      "category": "camara",
+      "desc": "CAMARA HIKVISION TETRAHIBRIDA TORRETA 2MP, 2.8MM, METALICA, IR20M",
+      "img": "camaras/hikvisiontetahibridatorreta.png",
+      "icon": "🔴",
+      "active": true
+    },
+    {
+      "id": 23,
+      "name": "Cámara hikvision pt fija 2mp 350 grados",
+      "category": "camara",
+      "desc": "CÁMARA HIKVISION PT FIJA 350 GRADOS 2MP CON AUDIO BIDIRECCIONAL, 2.8MM, IR 25M, LUZ 20M, MICR Y ALTAVOZ INT",
+      "img": "camaras/hikvision350grados.png",
+      "icon": "🔴",
+      "active": true
+    },
+    {
+      "id": 24,
       "name": "DVR 4 Canales",
       "category": "dvr",
       "desc": "DVR 4 canales, 5MP, económico",
       "img": "dvr/dvr-4ch.jpg",
       "icon": "💾",
       "badge": "",
-      "resoluciones": [
-        "2MP",
-        "5MP"
-      ],
+      "resoluciones": ["2MP", "5MP"],
       "active": true
     },
     {
-      "id": 11,
+      "id": 25,
       "name": "DVR 8 Canales",
       "category": "dvr",
       "desc": "DVR 8 canales, 5MP, H.265, 1 SATA",
       "img": "dvr/dvr-8ch.jpg",
       "icon": "💿",
       "badge": "RECOMENDADO",
-      "resoluciones": [
-        "2MP",
-        "5MP"
-      ],
+      "resoluciones": ["2MP", "5MP"],
       "active": true
     },
     {
-      "id": 12,
+      "id": 26,
       "name": "NVR 16 Canales",
       "category": "dvr",
       "desc": "NVR 16 canales PoE, 4K, IA",
       "img": "dvr/nvr-16ch.jpg",
       "icon": "🖥️",
       "badge": "PROFESIONAL",
-      "resoluciones": [
-        "2MP",
-        "4MP",
-        "5MP"
-      ],
+      "resoluciones": ["2MP", "4MP", "5MP"],
       "active": true
     },
     {
-      "id": 14,
+      "id": 27,
       "name": "Fuente 12V 10A",
       "category": "accesorio",
       "desc": "Fuente conmutada 12V 10A, para 8 cámaras",
@@ -179,7 +271,7 @@
       "active": true
     },
     {
-      "id": 15,
+      "id": 28,
       "name": "Disco WD Purple 2TB",
       "category": "accesorio",
       "desc": "Disco duro para videovigilancia, 2TB",
@@ -189,7 +281,7 @@
       "active": true
     },
     {
-      "id": 16,
+      "id": 29,
       "name": "Cable UTP Cat6",
       "category": "accesorio",
       "desc": "Caja de cable UTP Cat6, 305m",
@@ -199,7 +291,7 @@
       "active": true
     },
     {
-      "id": 17,
+      "id": 30,
       "name": "Fuente 12V 5A",
       "category": "accesorio",
       "desc": "Fuente conmutada 12V 5A, para 4 cámaras",
@@ -209,7 +301,7 @@
       "active": true
     },
     {
-      "id": 19,
+      "id": 31,
       "name": "Balum",
       "category": "accesorio",
       "desc": "Balum para video, par trenzado, transmisión HD",
@@ -219,7 +311,17 @@
       "active": true
     },
     {
-      "id": 20,
+      "id": 32,
+      "name": "Balum 4K audio/video",
+      "category": "accesorio",
+      "desc": "BALUN HDCVI/TVI/AHD/CVBS, SOPORTA HASTA 8MP",
+      "img": "accesorios/balum2.jpeg",
+      "icon": "📦",
+      "badge": "",
+      "active": true
+    },
+    {
+      "id": 33,
       "name": "Conector BNC x10",
       "category": "accesorio",
       "desc": "Conector BNC macho para cable coaxial, paquete x10",
@@ -229,7 +331,7 @@
       "active": true
     },
     {
-      "id": 21,
+      "id": 34,
       "name": "Conector DC x10",
       "category": "accesorio",
       "desc": "Conector DC macho/hembra, paquete x10",
@@ -239,7 +341,7 @@
       "active": true
     },
     {
-      "id": 22,
+      "id": 35,
       "name": "Caja Sobreponer 4x4",
       "category": "accesorio",
       "desc": "Caja plástica para montaje superficial",
@@ -249,7 +351,27 @@
       "active": true
     },
     {
-      "id": 23,
+      "id": 36,
+      "name": "Cable Utp cat 5E Exterior 305Mts",
+      "category": "accesorio",
+      "desc": "Cable Utp Cat. 5E Exterior X 305Mts Glc",
+      "img": "accesorios/Cable-cat5e2.jpeg",
+      "icon": "📦",
+      "badge": "",
+      "active": true
+    },
+    {
+      "id": 37,
+      "name": "DAHUA UTP CAT5e 100% Cobre. Diámetro 0,5mm. 100mts",
+      "category": "accesorio",
+      "desc": "DAHUA UTP CAT5e 100% Cobre. Diámetro 0,5mm. 100mts. PVC en color BLANCO para instalaciones exigentes.",
+      "img": "accesorios/Cable-cat5e100.jpeg",
+      "icon": "📦",
+      "badge": "",
+      "active": true
+    },
+    {
+      "id": 38,
       "name": "Cable UTP Cat5e 305m",
       "category": "accesorio",
       "desc": "Caja de cable UTP Cat5e, 305 metros",
@@ -259,7 +381,7 @@
       "active": true
     },
     {
-      "id": 24,
+      "id": 39,
       "name": "Disco WD Purple 1TB",
       "category": "accesorio",
       "desc": "Disco duro para videovigilancia, 1TB",
@@ -269,7 +391,7 @@
       "active": true
     },
     {
-      "id": 25,
+      "id": 40,
       "name": "Disco WD Purple 4TB",
       "category": "accesorio",
       "desc": "Disco duro para videovigilancia, 4TB",
@@ -279,7 +401,7 @@
       "active": true
     },
     {
-      "id": 26,
+      "id": 41,
       "name": "Disco WD Purple 6TB",
       "category": "accesorio",
       "desc": "Disco duro para videovigilancia, 6TB",
@@ -289,7 +411,7 @@
       "active": true
     },
     {
-      "id": 27,
+      "id": 42,
       "name": "Disco WD Purple 8TB",
       "category": "accesorio",
       "desc": "Disco duro para videovigilancia, 8TB",
@@ -299,7 +421,7 @@
       "active": true
     },
     {
-      "id": 28,
+      "id": 43,
       "name": "Internet portátil para eventos",
       "category": "internet",
       "desc": "Router 4G + batería para ferias, congresos",
@@ -309,17 +431,17 @@
       "active": true
     },
     {
-      "id": 29,
+      "id": 44,
       "name": "Instalación de router TP-Link",
       "category": "internet",
       "desc": "Configuración de routers domésticos y empresariales",
       "img": "internet/router-4g.jpg",
       "icon": "📶",
-      "badge": "Industrial",
+      "badge": "Hogar",
       "active": true
     },
     {
-      "id": 30,
+      "id": 45,
       "name": "Ampliación de señal (Repetidores/Extensores)",
       "category": "internet",
       "desc": "Eliminar zonas muertas en casa u oficina",
@@ -329,7 +451,17 @@
       "active": true
     },
     {
-      "id": 31,
+      "id": 46,
+      "name": "Switch PoE 4 Puertos",
+      "category": "internet",
+      "desc": "Switch Dahua para Escritorio 5 Puertos/ Fast Ethernet 10/100",
+      "img": "internet/switch.jpeg",
+      "icon": "🔄",
+      "badge": "PoE",
+      "active": true
+    },
+    {
+      "id": 47,
       "name": "Switch PoE 8 Puertos",
       "category": "internet",
       "desc": "Switch 8 puertos PoE, 10/100Mbps",
@@ -339,7 +471,7 @@
       "active": true
     },
     {
-      "id": 32,
+      "id": 48,
       "name": "Switch PoE 16 Puertos",
       "category": "internet",
       "desc": "Switch 16 puertos PoE, Gigabit",
@@ -349,7 +481,7 @@
       "active": true
     },
     {
-      "id": 33,
+      "id": 49,
       "name": "Ubiquiti NanoStation",
       "category": "internet",
       "desc": "Radio enlace punto a punto, 5GHz, 5km",
@@ -359,7 +491,7 @@
       "active": true
     },
     {
-      "id": 34,
+      "id": 50,
       "name": "Repetidor WiFi Mesh",
       "category": "internet",
       "desc": "Repetidor WiFi, cobertura 360°, hasta 10 dispositivos",
@@ -369,7 +501,17 @@
       "active": true
     },
     {
-      "id": 35,
+      "id": 51,
+      "name": "UPS",
+      "category": "internet",
+      "desc": "UPS Dahua de 600VA/360W/ Linea Iteractiva/ Entrada y Salida de 110 Vac +-10%/ Estabilizador de Voltaje AVR",
+      "img": "internet/ups.jpeg",
+      "icon": "🔄",
+      "badge": "Ups",
+      "active": true
+    },
+    {
+      "id": 52,
       "name": "Rack de Piso 6U",
       "category": "rack",
       "desc": "Rack metálico de piso, 6U, incluye bandeja",
@@ -379,7 +521,7 @@
       "active": true
     },
     {
-      "id": 36,
+      "id": 53,
       "name": "Rack de Piso 9U",
       "category": "rack",
       "desc": "Rack metálico de piso, 9U, incluye bandeja",
@@ -389,7 +531,7 @@
       "active": true
     },
     {
-      "id": 37,
+      "id": 54,
       "name": "Rack de Piso 12U",
       "category": "rack",
       "desc": "Rack metálico de piso, 12U, incluye bandeja",
@@ -399,7 +541,7 @@
       "active": true
     },
     {
-      "id": 38,
+      "id": 55,
       "name": "Rack de Piso 22U",
       "category": "rack",
       "desc": "Rack metálico de piso, 22U, puerta vidrio",
@@ -409,7 +551,7 @@
       "active": true
     },
     {
-      "id": 39,
+      "id": 56,
       "name": "Instalación de Cámaras",
       "category": "servicio",
       "desc": "Instalación profesional de cámaras y sistemas de videovigilancia",
@@ -419,7 +561,7 @@
       "active": true
     },
     {
-      "id": 40,
+      "id": 57,
       "name": "Soporte Técnico",
       "category": "servicio",
       "desc": "Soporte técnico remoto y presencial, mantenimiento correctivo",
@@ -429,7 +571,7 @@
       "active": true
     },
     {
-      "id": 41,
+      "id": 58,
       "name": "Instalación de Racks",
       "category": "servicio",
       "desc": "Instalación y organización profesional de racks y gabinetes",
@@ -439,7 +581,7 @@
       "active": true
     },
     {
-      "id": 42,
+      "id": 59,
       "name": "Mantenimiento de Racks",
       "category": "servicio",
       "desc": "Mantenimiento preventivo y correctivo de racks",
@@ -449,7 +591,7 @@
       "active": true
     },
     {
-      "id": 43,
+      "id": 60,
       "name": "Proyectos a Medida",
       "category": "servicio",
       "desc": "Diseño y desarrollo de sistemas de seguridad personalizados",
@@ -459,13 +601,13 @@
       "active": true
     },
     {
-      "id": 44,
+      "id": 61,
       "name": "Instalación de Redes Domiciliarias/WiFi",
       "category": "servicio",
       "desc": "Instalación profesional de redes WiFi para hogares y oficinas. Cobertura total, optimización de señal y configuración de equipos.",
       "img": "servicios/redes-wifi.jpg",
       "icon": "📶",
-      "badge": "NUEVO",
+      "badge": "Servicio",
       "active": true
     }
   ],
