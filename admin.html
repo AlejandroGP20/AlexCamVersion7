@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel · AlexCam</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @keyframes cartPulse {
+
+            0%,
+            100% {
+                box-shadow: 0 10px 20px rgba(10, 46, 77, 0.25);
+            }
+
+            50% {
+                box-shadow: 0 15px 30px rgba(10, 46, 77, 0.4);
+            }
+        }
+
+        @keyframes countPop {
+            0% {
+                transform: scale(0);
+            }
+
+            80% {
+                transform: scale(1.2);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* ========== CARRITO PREMIUM ========== */
+        .cart-icon {
+            background: linear-gradient(145deg, var(--primary), #1e4a6d);
+            width: 60px;
+            height: 60px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            box-shadow: 0 10px 20px rgba(10, 46, 77, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            cursor: pointer;
+            animation: cartPulse 2s infinite;
+        }
+
+        .cart-icon:hover {
+            transform: scale(1.15) rotate(5deg);
+            background: linear-gradient(145deg, #1e4a6d, var(--primary));
+            box-shadow: 0 15px 30px rgba(10, 46, 77, 0.4);
+        }
+
+        .cart-icon i {
+            font-size: 1.8rem;
+            color: white;
+            filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.2));
+        }
+
+        .cart-count {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background: linear-gradient(145deg, #FFD700, #FFA500);
+            color: var(--primary);
+            font-size: 0.8rem;
+            font-weight: 800;
+            padding: 6px 10px;
+            border-radius: 40px;
+            border: 2px solid white;
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+            min-width: 25px;
+            text-align: center;
+            animation: countPop 0.5s ease-out;
+        }
+
+        .admin-container {
+            max-width: 1400px;
+            margin: 40px auto;
+            padding: 0 24px;
+        }
+
+        .admin-header {
+            background: var(--primary);
+            color: white;
+            padding: 32px;
+            border-radius: var(--radius-lg);
+            margin-bottom: 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .admin-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 24px;
+            margin-bottom: 32px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 24px;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--gray-200);
+            transition: var(--transition);
+        }
+
+        .stat-card:hover {
+            box-shadow: var(--shadow-md);
+            transform: translateY(-2px);
+        }
+
+        .admin-filters {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+        }
+
+        .admin-table {
+            background: white;
+            border-radius: var(--radius-lg);
+            padding: 24px;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--gray-200);
+            overflow-x: auto;
+        }
+
+        .admin-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .admin-table th {
+            text-align: left;
+            padding: 16px 12px;
+            background: var(--gray-100);
+            color: var(--primary);
+            font-weight: 700;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+        }
+
+        .admin-table td {
+            padding: 16px 12px;
+            border-bottom: 1px solid var(--gray-200);
+            vertical-align: middle;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 6px 14px;
+            border-radius: var(--radius-full);
+            font-size: 0.8rem;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .status-active {
+            background: #e3f2ed;
+            color: #1e8f5e;
+        }
+
+        .status-inactive {
+            background: #fee9e7;
+            color: #c23b3b;
+        }
+
+        .category-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: var(--radius-full);
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .category-kit {
+            background: #e1f5fe;
+            color: #0288d1;
+        }
+
+        .category-camara {
+            background: #e8f5e9;
+            color: #2e7d32;
+        }
+
+        .category-dvr {
+            background: #fff3e0;
+            color: #e65100;
+        }
+
+        .category-accesorio {
+            background: #f3e5f5;
+            color: #7b1fa2;
+        }
+
+        .category-internet {
+            background: #e0f2f1;
+            color: #00695c;
+        }
+
+        .category-rack {
+            background: #ffebcc;
+            color: #bf5b17;
+        }
+
+        .category-servicio {
+            background: #ffe0b2;
+            color: #8d6e63;
+        }
+
+        .save-btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 14px 32px;
+            border-radius: var(--radius-full);
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .save-btn:hover {
+            background: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .export-btn {
+            background: var(--whatsapp);
+            color: white;
+            border: none;
+            padding: 14px 28px;
+            border-radius: var(--radius-full);
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .export-btn:hover {
+            background: var(--whatsapp-hover);
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .cart-icon {
+                width: 50px;
+                height: 50px;
+            }
+
+            .cart-icon i {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        const ADMIN_PASSWORD = 'AlexCam2026';
+        const password = prompt('🔐 PANEL DE ADMINISTRACIÓN\n\nIngresá la contraseña:');
+        if (password !== ADMIN_PASSWORD) {
+            alert('❌ Contraseña incorrecta. Acceso denegado.');
+            window.location.href = 'index.html';
+        }
+    </script>
+
+    <div id="header-placeholder"></div>
+
+    <div class="admin-container">
+        <div class="admin-header">
+            <div>
+                <h1 style="color: white; margin-bottom: 8px; display: flex; align-items: center; gap: 12px;">
+                    <i class="fas fa-shield-hal"></i> Panel AlexCam
+                </h1>
+                <p style="color: rgba(255,255,255,0.9);">Gestión de productos</p>
+            </div>
+            <div style="display: flex; gap: 16px;">
+                <button class="export-btn" onclick="exportarCatalogo()">
+                    <i class="fas fa-file-export"></i> Exportar catálogo
+                </button>
+            </div>
+        </div>
+
+        <div class="admin-stats">
+            <div class="stat-card">
+                <h3 style="color: var(--gray-500); margin-bottom: 8px;">Total productos</h3>
+                <span style="font-size: 2.5rem; font-weight: 800; color: var(--primary);" id="total-productos">0</span>
+            </div>
+            <div class="stat-card">
+                <h3 style="color: var(--gray-500); margin-bottom: 8px;">Activos</h3>
+                <span style="font-size: 2.5rem; font-weight: 800; color: #1e8f5e;" id="total-activos">0</span>
+            </div>
+            <div class="stat-card">
+                <h3 style="color: var(--gray-500); margin-bottom: 8px;">Inactivos</h3>
+                <span style="font-size: 2.5rem; font-weight: 800; color: #c23b3b;" id="total-inactivos">0</span>
+            </div>
+            <div class="stat-card">
+                <h3 style="color: var(--gray-500); margin-bottom: 8px;">Categorías</h3>
+                <span style="font-size: 2rem; font-weight: 800; color: var(--accent);" id="total-categorias">7</span>
+            </div>
+        </div>
+
+        <div class="admin-filters">
+            <button class="filter-btn active" data-filter="all">📋 Todos</button>
+            <button class="filter-btn" data-filter="kit">📦 Kits</button>
+            <button class="filter-btn" data-filter="camara">📹 Cámaras</button>
+            <button class="filter-btn" data-filter="dvr">💾 DVR/NVR</button>
+            <button class="filter-btn" data-filter="accesorio">🔌 Accesorios</button>
+            <button class="filter-btn" data-filter="internet">📡 Internet</button>
+            <button class="filter-btn" data-filter="rack">🗄️ Racks</button>
+            <button class="filter-btn" data-filter="servicio">🔧 Servicios</button>
+            <button class="filter-btn" data-filter="active">✅ Activos</button>
+            <button class="filter-btn" data-filter="inactive">❌ Inactivos</button>
+        </div>
+
+        <div class="admin-table">
+            <table id="productos-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Producto</th>
+                        <th>Categoría</th>
+                        <th>Badge</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="productos-tbody">
+                    <tr>
+                        <td colspan="6" style="text-align: center; padding: 60px;">
+                            <i class="fas fa-spinner fa-spin" style="font-size: 2rem; color: var(--primary);"></i>
+                            <p style="margin-top: 16px;">Cargando productos...</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div style="display: flex; justify-content: flex-end; margin-top: 32px;">
+            <button class="save-btn" onclick="guardarCambios()">
+                <i class="fas fa-save"></i> Guardar todos los cambios
+            </button>
+        </div>
+    </div>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="script.js"></script>
+    <script src="admin.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            if (typeof loadHeader === 'function') loadHeader();
+            if (typeof loadFooter === 'function') loadFooter();
+            if (typeof cargarProductosAdmin === 'function') await cargarProductosAdmin();
+            if (typeof actualizarContadorCotizacion === 'function') actualizarContadorCotizacion();
+        });
+    </script>
+</body>
+
+</html>

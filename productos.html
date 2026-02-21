@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos · AlexCam</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .product-card {
+            position: relative;
+        }
+
+        .filter-btn {
+            cursor: pointer !important;
+            transition: all 0.25s ease !important;
+        }
+
+        .filter-btn.active {
+            background: var(--primary) !important;
+            color: white !important;
+            border-color: var(--primary) !important;
+        }
+
+        @keyframes glow {
+
+            0%,
+            100% {
+                box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+            }
+
+            50% {
+                box-shadow: 0 0 40px rgba(255, 215, 0, 0.6);
+            }
+        }
+
+        @keyframes cartPulse {
+
+            0%,
+            100% {
+                box-shadow: 0 10px 20px rgba(10, 46, 77, 0.25);
+            }
+
+            50% {
+                box-shadow: 0 15px 30px rgba(10, 46, 77, 0.4);
+            }
+        }
+
+        @keyframes countPop {
+            0% {
+                transform: scale(0);
+            }
+
+            80% {
+                transform: scale(1.2);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* ========== CARRITO PREMIUM ========== */
+        .cart-icon {
+            background: linear-gradient(145deg, var(--primary), #1e4a6d);
+            width: 60px;
+            height: 60px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            box-shadow: 0 10px 20px rgba(10, 46, 77, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            cursor: pointer;
+            animation: cartPulse 2s infinite;
+        }
+
+        .cart-icon:hover {
+            transform: scale(1.15) rotate(5deg);
+            background: linear-gradient(145deg, #1e4a6d, var(--primary));
+            box-shadow: 0 15px 30px rgba(10, 46, 77, 0.4);
+        }
+
+        .cart-icon i {
+            font-size: 1.8rem;
+            color: white;
+            filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.2));
+        }
+
+        .cart-count {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background: linear-gradient(145deg, #FFD700, #FFA500);
+            color: var(--primary);
+            font-size: 0.8rem;
+            font-weight: 800;
+            padding: 6px 10px;
+            border-radius: 40px;
+            border: 2px solid white;
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+            min-width: 25px;
+            text-align: center;
+            animation: countPop 0.5s ease-out;
+        }
+
+        /* ========== BANNER DE MARCAS COMPACTO ========== */
+        .marcas-banner-compacto {
+            background: linear-gradient(145deg, #0a2540, #1a3a5f);
+            border-radius: 80px;
+            padding: 20px 30px;
+            box-shadow: 0 20px 40px rgba(10, 37, 64, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 40px;
+        }
+
+        .marcas-contenedor-compacto {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 2;
+        }
+
+        .marcas-label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+            font-weight: 600;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+        }
+
+        .marcas-label i {
+            color: #FFD700;
+            font-size: 1.3rem;
+        }
+
+        .marca-logo-compacto {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .marca-logo-compacto:hover {
+            transform: scale(1.1);
+        }
+
+        .marca-imagen-compacta {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            background: white;
+            border-radius: 10px;
+            padding: 5px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .marca-fallback-compacto {
+            display: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header-placeholder"></div>
+
+    <div class="container page-header">
+        <h1><i class="fas fa-microchip"></i> Catálogo de productos</h1>
+        <p>Kits, cámaras, grabadores, accesorios, internet, racks y servicios profesionales</p>
+    </div>
+
+    <!-- ========== BANNER DE MARCAS CON LOGOS - PRODUCTOS ========== -->
+    <div class="container">
+        <div class="marcas-banner-compacto">
+            <div class="marcas-contenedor-compacto">
+
+                <div class="marcas-label">
+                    <i class="fas fa-crown"></i>
+                    <span>Marcas oficiales:</span>
+                </div>
+
+                <!-- DAHUA -->
+                <div class="marca-logo-compacto">
+                    <img src="images/marcas/dahua-logo.png" alt="Dahua" class="marca-imagen-compacta"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="marca-fallback-compacto" style="background: linear-gradient(145deg, #0a2e4d, #154a6e);">
+                        🔵</div>
+                    <span style="font-weight: 700; color: white; text-shadow: 0 2px 5px rgba(0,0,0,0.3);">DAHUA</span>
+                </div>
+                <!-- HIKVISION -->
+                <div class="marca-logo-compacto">
+                    <img src="images/marcas/hikvision-logo.png" alt="Hikvision" class="marca-imagen-compacta"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="marca-fallback-compacto" style="background: linear-gradient(145deg, #0a2e4d, #154a6e);">
+                        🔵</div>
+                    <span
+                        style="font-weight: 700; color: white; text-shadow: 0 2px 5px rgba(0,0,0,0.3);">HIKVISION</span>
+                </div>
+
+                <!-- IMOU -->
+                <div class="marca-logo-compacto">
+                    <img src="images/marcas/imou.png" alt="imou" class="marca-imagen-compacta"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="marca-fallback-compacto" style="background: linear-gradient(145deg, #8b0000, #a52a2a);">
+                        🔴</div>
+                    <span style="font-weight: 700; color: white; text-shadow: 0 2px 5px rgba(0,0,0,0.3);">IMOU</span>
+                </div>
+
+                <!-- EZVIZ -->
+                <div class="marca-logo-compacto">
+                    <img src="images/marcas/ezviz.png" alt="Ezviz" class="marca-imagen-compacta"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="marca-fallback-compacto" style="background: linear-gradient(145deg, #c0392b, #e74c3c);">
+                        ⭕</div>
+                    <span style="font-weight: 700; color: white; text-shadow: 0 2px 5px rgba(0,0,0,0.3);">EZVIZ</span>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="catalog-filters">
+            <button class="filter-btn active" data-filter="all">📋 Todos</button>
+            <button class="filter-btn" data-filter="kit">📦 Kits</button>
+            <button class="filter-btn" data-filter="camara">📹 Cámaras</button>
+            <button class="filter-btn" data-filter="dvr">💾 DVR/NVR</button>
+            <button class="filter-btn" data-filter="accesorio">🔌 Accesorios</button>
+            <button class="filter-btn" data-filter="internet">📡 Internet</button>
+            <button class="filter-btn" data-filter="rack">🗄️ Racks</button>
+            <button class="filter-btn" data-filter="servicio">🔧 Servicios</button>
+        </div>
+
+        <div id="loading-indicator" style="text-align: center; padding: 40px;">
+            <i class="fas fa-spinner fa-spin" style="font-size: 2rem; color: var(--primary);"></i>
+            <p style="margin-top: 16px;">Cargando productos...</p>
+        </div>
+
+        <div class="products-grid" id="productos-grid"></div>
+    </div>
+
+    <div class="whatsapp-float"
+        onclick="window.open('https://wa.me/59167866604?text=Hola%20AlexCam%2C%20quiero%20informaci%C3%B3n%20sobre%20productos', '_blank')">
+        <i class="fab fa-whatsapp"></i>
+    </div>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', async function () {
+            if (typeof loadHeader === 'function') loadHeader();
+            if (typeof loadFooter === 'function') loadFooter();
+            await cargarProductosDesdeJSON();
+            document.getElementById('loading-indicator').style.display = 'none';
+            if (typeof initFiltros === 'function') {
+                setTimeout(() => initFiltros(), 200);
+            }
+        });
+    </script>
+</body>
+
+</html>

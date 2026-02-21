@@ -1,0 +1,479 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "name": "Kit Básico 2 Cámaras",
+      "category": "kit",
+      "desc": " 2MP ·  4MP ·  5MP\nIncluye: 2 cámaras + DVR 4ch + Disco 1TB + Fuente + Cables",
+      "img": "kits/kit-basico.jpg",
+      "icon": "📦",
+      "badge": "RECOMENDADO",
+      "resoluciones": [
+        "2MP",
+        "4MP",
+        "5MP"
+      ],
+      "active": true
+    },
+    {
+      "id": 2,
+      "name": "Kit 4 Cámaras",
+      "category": "kit",
+      "desc": " 2MP ·  4MP ·  5MP\nIncluye: 4 cámaras + DVR 4ch + Disco 1TB + Fuente + Cables",
+      "img": "kits/kit-4cam.jpg",
+      "icon": "📦",
+      "badge": "MÁS VENDIDO",
+      "resoluciones": [
+        "2MP",
+        "4MP",
+        "5MP"
+      ],
+      "active": true
+    },
+    {
+      "id": 3,
+      "name": "Kit 8 Cámaras",
+      "category": "kit",
+      "desc": " 2MP ·  4MP ·  5MP\nIncluye: 8 cámaras + DVR 8ch + Disco 2TB + Fuente + Cables",
+      "img": "kits/kit-8cam.jpg",
+      "icon": "📦",
+      "badge": "POPULAR",
+      "resoluciones": [
+        "2MP",
+        "4MP",
+        "5MP"
+      ],
+      "active": true
+    },
+    {
+      "id": 4,
+      "name": "Kit 16 Cámaras",
+      "category": "kit",
+      "desc": " 2MP ·  4MP ·  5MP\nIncluye: 16 cámaras + DVR/NVR 16ch + Disco 4TB + Fuente + Cables",
+      "img": "kits/kit-16cam.jpg",
+      "icon": "🏢",
+      "badge": "EMPRESARIAL",
+      "resoluciones": [
+        "2MP",
+        "4MP",
+        "5MP"
+      ],
+      "active": true
+    },
+    {
+      "id": 5,
+      "name": "Kit 32 Cámaras",
+      "category": "kit",
+      "desc": " 2MP ·  4MP ·  5MP\nIncluye: 32 cámaras + NVR 32ch + Disco 8TB + Cables",
+      "img": "kits/kit-32cam.jpg",
+      "icon": "🏭",
+      "badge": "INDUSTRIAL",
+      "resoluciones": [
+        "2MP",
+        "4MP",
+        "5MP"
+      ],
+      "active": true
+    },
+    {
+      "id": 6,
+      "name": "Cámara Domo 4MP",
+      "category": "camara",
+      "desc": "Cámara IP domo 4MP, PoE, IR 30m, H.265",
+      "img": "camaras/domo-4mp.jpg",
+      "icon": "🔵",
+      "badge": "IP",
+      "active": true
+    },
+    {
+      "id": 7,
+      "name": "Cámara Bullet 5MP",
+      "category": "camara",
+      "desc": "Cámara IP bullet 5MP, exterior, IR 50m, PoE",
+      "img": "camaras/bullet-5mp.jpg",
+      "icon": "🔴",
+      "badge": "Alta definición",
+      "active": true
+    },
+    {
+      "id": 8,
+      "name": "Cámara PTZ 4MP",
+      "category": "camara",
+      "desc": "Cámara PTZ IP 4MP, zoom óptico 4x, seguimiento",
+      "img": "camaras/ptz-4mp.jpg",
+      "icon": "🎥",
+      "badge": "PTZ",
+      "active": true
+    },
+    {
+      "id": 9,
+      "name": "Cámara Domo 2MP",
+      "category": "camara",
+      "desc": "Cámara analógica 2MP, IR 20m, económico",
+      "img": "camaras/domo-2mp.jpg",
+      "icon": "⭕",
+      "badge": "",
+      "active": true
+    },
+    {
+      "id": 10,
+      "name": "Cámara Bullet 4MP",
+      "category": "camara",
+      "desc": "Cámara analógica 4MP, exterior, IR 40m",
+      "img": "camaras/bullet-4mp.jpg",
+      "icon": "🔴",
+      "badge": "Más vendida",
+      "active": true
+    },
+    {
+      "id": 13,
+      "name": "DVR 4 Canales",
+      "category": "dvr",
+      "desc": "DVR 4 canales, 5MP, económico",
+      "img": "dvr/dvr-4ch.jpg",
+      "icon": "💾",
+      "badge": "",
+      "resoluciones": [
+        "2MP",
+        "5MP"
+      ],
+      "active": true
+    },
+    {
+      "id": 11,
+      "name": "DVR 8 Canales",
+      "category": "dvr",
+      "desc": "DVR 8 canales, 5MP, H.265, 1 SATA",
+      "img": "dvr/dvr-8ch.jpg",
+      "icon": "💿",
+      "badge": "RECOMENDADO",
+      "resoluciones": [
+        "2MP",
+        "5MP"
+      ],
+      "active": true
+    },
+    {
+      "id": 12,
+      "name": "NVR 16 Canales",
+      "category": "dvr",
+      "desc": "NVR 16 canales PoE, 4K, IA",
+      "img": "dvr/nvr-16ch.jpg",
+      "icon": "🖥️",
+      "badge": "PROFESIONAL",
+      "resoluciones": [
+        "2MP",
+        "4MP",
+        "5MP"
+      ],
+      "active": true
+    },
+    {
+      "id": 14,
+      "name": "Fuente 12V 10A",
+      "category": "accesorio",
+      "desc": "Fuente conmutada 12V 10A, para 8 cámaras",
+      "img": "accesorios/fuente-10a.jpg",
+      "icon": "⚡",
+      "badge": "",
+      "active": true
+    },
+    {
+      "id": 15,
+      "name": "Disco WD Purple 2TB",
+      "category": "accesorio",
+      "desc": "Disco duro para videovigilancia, 2TB",
+      "img": "accesorios/disco-2tb.jpg",
+      "icon": "💽",
+      "badge": "WD Purple",
+      "active": true
+    },
+    {
+      "id": 16,
+      "name": "Cable UTP Cat6",
+      "category": "accesorio",
+      "desc": "Caja de cable UTP Cat6, 305m",
+      "img": "accesorios/cable-utp.jpg",
+      "icon": "🔌",
+      "badge": "Premium",
+      "active": true
+    },
+    {
+      "id": 17,
+      "name": "Fuente 12V 5A",
+      "category": "accesorio",
+      "desc": "Fuente conmutada 12V 5A, para 4 cámaras",
+      "img": "accesorios/fuente-5a.jpg",
+      "icon": "⚡",
+      "badge": "",
+      "active": true
+    },
+    {
+      "id": 19,
+      "name": "Balum",
+      "category": "accesorio",
+      "desc": "Balum para video, par trenzado, transmisión HD",
+      "img": "accesorios/balum.jpg",
+      "icon": "🔌",
+      "badge": "",
+      "active": true
+    },
+    {
+      "id": 20,
+      "name": "Conector BNC x10",
+      "category": "accesorio",
+      "desc": "Conector BNC macho para cable coaxial, paquete x10",
+      "img": "accesorios/conector-bnc.jpg",
+      "icon": "🔌",
+      "badge": "",
+      "active": true
+    },
+    {
+      "id": 21,
+      "name": "Conector DC x10",
+      "category": "accesorio",
+      "desc": "Conector DC macho/hembra, paquete x10",
+      "img": "accesorios/conector-dc.jpg",
+      "icon": "🔌",
+      "badge": "",
+      "active": true
+    },
+    {
+      "id": 22,
+      "name": "Caja Sobreponer 4x4",
+      "category": "accesorio",
+      "desc": "Caja plástica para montaje superficial",
+      "img": "accesorios/caja-4x4.jpg",
+      "icon": "📦",
+      "badge": "",
+      "active": true
+    },
+    {
+      "id": 23,
+      "name": "Cable UTP Cat5e 305m",
+      "category": "accesorio",
+      "desc": "Caja de cable UTP Cat5e, 305 metros",
+      "img": "accesorios/cable-cat5e.jpg",
+      "icon": "🔌",
+      "badge": "",
+      "active": true
+    },
+    {
+      "id": 24,
+      "name": "Disco WD Purple 1TB",
+      "category": "accesorio",
+      "desc": "Disco duro para videovigilancia, 1TB",
+      "img": "accesorios/disco-1tb.jpg",
+      "icon": "💽",
+      "badge": "WD Purple",
+      "active": true
+    },
+    {
+      "id": 25,
+      "name": "Disco WD Purple 4TB",
+      "category": "accesorio",
+      "desc": "Disco duro para videovigilancia, 4TB",
+      "img": "accesorios/disco-4tb.jpg",
+      "icon": "💽",
+      "badge": "WD Purple",
+      "active": true
+    },
+    {
+      "id": 26,
+      "name": "Disco WD Purple 6TB",
+      "category": "accesorio",
+      "desc": "Disco duro para videovigilancia, 6TB",
+      "img": "accesorios/disco-6tb.jpg",
+      "icon": "💽",
+      "badge": "WD Purple",
+      "active": true
+    },
+    {
+      "id": 27,
+      "name": "Disco WD Purple 8TB",
+      "category": "accesorio",
+      "desc": "Disco duro para videovigilancia, 8TB",
+      "img": "accesorios/disco-8tb.jpg",
+      "icon": "💽",
+      "badge": "WD Purple",
+      "active": true
+    },
+    {
+      "id": 28,
+      "name": "Internet portátil para eventos",
+      "category": "internet",
+      "desc": "Router 4G + batería para ferias, congresos",
+      "img": "internet/portatil.jpg",
+      "icon": "📡",
+      "badge": "4G",
+      "active": true
+    },
+    {
+      "id": 29,
+      "name": "Instalación de router TP-Link",
+      "category": "internet",
+      "desc": "Configuración de routers domésticos y empresariales",
+      "img": "internet/router-4g.jpg",
+      "icon": "📶",
+      "badge": "Industrial",
+      "active": true
+    },
+    {
+      "id": 30,
+      "name": "Ampliación de señal (Repetidores/Extensores)",
+      "category": "internet",
+      "desc": "Eliminar zonas muertas en casa u oficina",
+      "img": "internet/repetidores.jpg",
+      "icon": "🔄",
+      "badge": "PoE",
+      "active": true
+    },
+    {
+      "id": 31,
+      "name": "Switch PoE 8 Puertos",
+      "category": "internet",
+      "desc": "Switch 8 puertos PoE, 10/100Mbps",
+      "img": "internet/switch-poe-8.jpg",
+      "icon": "🔄",
+      "badge": "PoE",
+      "active": true
+    },
+    {
+      "id": 32,
+      "name": "Switch PoE 16 Puertos",
+      "category": "internet",
+      "desc": "Switch 16 puertos PoE, Gigabit",
+      "img": "internet/switch-poe-16.jpg",
+      "icon": "🔄",
+      "badge": "Gigabit",
+      "active": true
+    },
+    {
+      "id": 33,
+      "name": "Ubiquiti NanoStation",
+      "category": "internet",
+      "desc": "Radio enlace punto a punto, 5GHz, 5km",
+      "img": "internet/nanostation.jpg",
+      "icon": "📡",
+      "badge": "Ubiquiti",
+      "active": true
+    },
+    {
+      "id": 34,
+      "name": "Repetidor WiFi Mesh",
+      "category": "internet",
+      "desc": "Repetidor WiFi, cobertura 360°, hasta 10 dispositivos",
+      "img": "internet/mesh.jpeg",
+      "icon": "🔄",
+      "badge": "Mesh",
+      "active": true
+    },
+    {
+      "id": 35,
+      "name": "Rack de Piso 6U",
+      "category": "rack",
+      "desc": "Rack metálico de piso, 6U, incluye bandeja",
+      "img": "racks/rack-6u.jpg",
+      "icon": "🗄️",
+      "badge": "",
+      "active": true
+    },
+    {
+      "id": 36,
+      "name": "Rack de Piso 9U",
+      "category": "rack",
+      "desc": "Rack metálico de piso, 9U, incluye bandeja",
+      "img": "racks/rack-9u.jpg",
+      "icon": "🗄️",
+      "badge": "",
+      "active": true
+    },
+    {
+      "id": 37,
+      "name": "Rack de Piso 12U",
+      "category": "rack",
+      "desc": "Rack metálico de piso, 12U, incluye bandeja",
+      "img": "racks/rack-12u.jpg",
+      "icon": "🗄️",
+      "badge": "",
+      "active": true
+    },
+    {
+      "id": 38,
+      "name": "Rack de Piso 22U",
+      "category": "rack",
+      "desc": "Rack metálico de piso, 22U, puerta vidrio",
+      "img": "racks/rack-22u.jpg",
+      "icon": "🗄️",
+      "badge": "Profesional",
+      "active": true
+    },
+    {
+      "id": 39,
+      "name": "Instalación de Cámaras",
+      "category": "servicio",
+      "desc": "Instalación profesional de cámaras y sistemas de videovigilancia",
+      "img": "servicios/instalacion.jpg",
+      "icon": "🔧",
+      "badge": "Servicio",
+      "active": true
+    },
+    {
+      "id": 40,
+      "name": "Soporte Técnico",
+      "category": "servicio",
+      "desc": "Soporte técnico remoto y presencial, mantenimiento correctivo",
+      "img": "servicios/soporte.jpg",
+      "icon": "🔧",
+      "badge": "Servicio",
+      "active": true
+    },
+    {
+      "id": 41,
+      "name": "Instalación de Racks",
+      "category": "servicio",
+      "desc": "Instalación y organización profesional de racks y gabinetes",
+      "img": "servicios/instalacion-racks.jpg",
+      "icon": "🗄️",
+      "badge": "Servicio",
+      "active": true
+    },
+    {
+      "id": 42,
+      "name": "Mantenimiento de Racks",
+      "category": "servicio",
+      "desc": "Mantenimiento preventivo y correctivo de racks",
+      "img": "servicios/mantenimiento-racks.jpg",
+      "icon": "🔧",
+      "badge": "Servicio",
+      "active": true
+    },
+    {
+      "id": 43,
+      "name": "Proyectos a Medida",
+      "category": "servicio",
+      "desc": "Diseño y desarrollo de sistemas de seguridad personalizados",
+      "img": "servicios/proyectos.jpg",
+      "icon": "📐",
+      "badge": "Servicio",
+      "active": true
+    },
+    {
+      "id": 44,
+      "name": "Instalación de Redes Domiciliarias/WiFi",
+      "category": "servicio",
+      "desc": "Instalación profesional de redes WiFi para hogares y oficinas. Cobertura total, optimización de señal y configuración de equipos.",
+      "img": "servicios/redes-wifi.jpg",
+      "icon": "📶",
+      "badge": "NUEVO",
+      "active": true
+    }
+  ],
+  "config": {
+    "whatsapp_number": "59167866604",
+    "empresa": "AlexCam",
+    "email": "ventas@alexcam.com",
+    "horario": "Lunes a viernes: 8am - 6pm",
+    "cobertura": "Charagua · Santa Cruz · Bolivia"
+  }
+}
